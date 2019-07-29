@@ -1,0 +1,45 @@
+<!--src/test/resources/launchers/BrowserStack.xml-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Browser Stack Tests" verbose="1" parallel="tests">
+
+    <test name="Tests on Firefox 65" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="65.0"/>
+        <classes>
+            <class name="parallel.BrowserstackSampleTest"/>
+        </classes>
+    </test>
+    <test name="Tests on Edge 15" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="edge"/>
+        <parameter name="version" value="15.0"/>
+        <classes>
+            <class name="parallel.BrowserstackSampleTest"/>
+        </classes>
+    </test>
+
+    <test name="Tests on Edge 17" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="edge"/>
+        <parameter name="version" value="17.0"/>
+        <classes>
+            <class name="parallel.BrowserstackSampleTest"/>
+        </classes>
+    </test>
+
+    <test name="Tests on Edge 18" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="edge"/>
+        <parameter name="version" value="17.0"/>
+        <classes>
+            <class name="parallel.BrowserstackSampleTest"/>
+        </classes>
+    </test>
+
+    <test name="Tests on Chrome 73" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="73.0"/>
+        <classes>
+            <class name="parallel.BrowserstackSampleTest"/>
+        </classes>
+    </test>
+
+</suite>

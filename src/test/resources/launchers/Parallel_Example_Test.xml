@@ -1,0 +1,24 @@
+<!--src/test/resources/launchers/BrowserStack.xml-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Local tests" verbose="1" parallel="tests">
+
+    <test name="Test on Firefox" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="parallel.Parallel_Example_Test"/>
+        </classes>
+    </test>
+    <test name="Test on Chrome" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="parallel.Parallel_Example_Test"/>
+        </classes>
+    </test>
+    <test name="Test on IE" preserve-order="true" group-by-instances="true">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="parallel.Parallel_Example_Test"/>
+        </classes>
+    </test>
+</suite>
